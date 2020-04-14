@@ -1,0 +1,18 @@
+.container {
+    display: grid;
+}
+
+h1
+h3
+ {
+    text-transform: uppercase;
+}
+
+.nav ul li {
+    text-transform: capitalize;
+    grid-row: 5;
+}
+
+.features {
+    grid-row: 3;
+}
