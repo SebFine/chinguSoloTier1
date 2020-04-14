@@ -2,17 +2,21 @@
     display: grid;
 }
 
-h1
+h1,
 h3
  {
     text-transform: uppercase;
 }
 
-.nav ul li {
+nav ul {
     text-transform: capitalize;
     grid-row: 5;
 }
 
-.features {
+#features {
     grid-row: 3;
+}
+
+#blog-columns {
+
 }
