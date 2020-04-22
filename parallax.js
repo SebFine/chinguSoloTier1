@@ -4,11 +4,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
     var xScrollPosition;
     var yScrollPosition;
 
-    for (let i = 0; i < parallax.length; i++) {
-        let element = parallax[i];
-        return element;
-    }
-
     function setTranslate(xPos, yPos, el) {
         el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
     }
@@ -16,6 +11,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     function scrollLoop() {
       xScrollPosition = window.scrollX;
       yScrollPosition = window.scrollY;
+
 
       setTranslate(0, yScrollPosition * -0.2, element);
 
