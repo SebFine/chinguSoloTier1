@@ -1,22 +1,213 @@
-.container {
-    display: grid;
+* {
+    box-sizing: border-box;
 }
 
 h1,
-h3
- {
+h3 {
     text-transform: uppercase;
+    padding: 15px;
+    color: white;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    text-shadow: 2px 2px black;
 }
 
-nav ul {
+body,
+p,
+h2,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #404040;
+}
+
+p {
+    padding: 15px;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Text color */
+.grey-text h2 {
+    color: #666666;
+    padding: 15px;
+}
+
+.green-text h2 {
+    color: #449F51;
+    padding: 15px;
+}
+
+.red-text h2 {
+    color: #852406;
+    padding: 15px;
+}
+
+.blue-text h2 {
+    color: #1686C1;
+    padding: 15px;
+}
+
+/* button colors */
+
+.button {
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.center a {
+    align-items: centerw;
+}
+
+.grey-button {
+    color: #757575;
+    background-color: white;
+    border: #757575 solid 1px;
+}
+
+.green-button {
+    color: white;
+    background-color: #449F51;
+}
+
+.red-button {
+    color: white;
+    background-color: #852406;
+}
+
+.blue-button {
+    color: white;
+    background-color: #1686C1;
+}
+
+.button,
+.main-nav   {
     text-transform: capitalize;
-    grid-row: 5;
 }
 
-#features {
-    grid-row: 3;
+/* Structure elements */
+
+.main-nav a {
+    border: white solid 1px;
+    color: white;
+    padding: 10px 20px;
 }
 
-#blog-columns {
+.main-nav a:hover,
+.main-nav a:active {
+    background-color: #49505F;
+}
+
+header {
+    background-color: #383E4C;
+}
+
+.footer {
+    text-align: center;
+}
+
+nav ul li {
+    margin: 20px;
+}
+
+/* background images sections */
+
+.banner {
+    text-align: center;
+    background-image: url(img/bg-1.jpg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    padding: 30px;
+    background-size: 100%;
+    transform: translateZ(0px) scale(1);
+}
+
+.services {
+    background-image: url(img/bg-2.jpg);
+    text-align: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    padding: 30px;
+    background-size: 100%;
+}
+
+.contact {
+    background-image: url(img/bg-3.jpg);
+    text-align: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    padding: 30px;
+    background-size: 100%;
+}
+
+.parallax {
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Flex Items */
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main-nav,
+.column-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.col,
+.col2,
+.col3,
+.col4 {
+    flex: 1;
+    background-color: #F2F2F2;
+    margin: 20px 20px 20px 20px;
+    flex-basis: 0;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.col {
+    max-width: 1140px;
+}
+
+.col2 {
+    max-width: 555px;
+}
+
+.col3 {
+    max-width: 360px;
 
 }
+
+.col4 {
+    max-width: 260px;
+}
+
+
+
+
+/* Testing */
+
