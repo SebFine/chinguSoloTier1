@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
-    var parallax = document.getElementsByClassName('parallax');
-    var xScrollPosition;
-    var yScrollPosition;
+    const parallax = document.getElementsByClassName('parallax');
+    const xScrollPosition;
+    const yScrollPosition;
 
     function setTranslate(xPos, yPos, el) {
         el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
