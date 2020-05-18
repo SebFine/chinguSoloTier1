@@ -11,19 +11,24 @@
 <body>
     <div class="p-wrapper">
         <header>
-            <div class="container">
-                <nav>
+            <div class="container-nav">
+                <nav id="show-menue" class="none">
                     <ul class="main-nav">
-                        <li><a href="#">homepage</a></li>
-                        <li><a href="#scroll-anchor-features">about us</a></li>
-                        <li><a href="#scroll-anchor-services">services</a></li>
-                        <li><a href="#scroll-anchor-contact">contact</a></li>
-                        <li><a href="#">Github</a></li>
+                        <li><a href="#" class="navBtn active">homepage</a></li>
+                        <li><a href="#scroll-anchor-features" class="navBtn">about us</a></li>
+                        <li><a href="#scroll-anchor-services" class="navBtn">services</a></li>
+                        <li><a href="#scroll-anchor-contact" class="navBtn">contact</a></li>
+                        <li><a href="https://github.com/SebFine/chinguSoloTier1" target="_blank">github</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <div class="banner parallax">
+            <div class="menue">
+                <div class="menue-btn"></div>
+                <div class="menue-btn"></div>
+                <div class="menue-btn"></div>
+            </div>
             <h1>conquer clone</h1>
             <h3>a simple template without bootstrap</h3>
         </div>
@@ -75,7 +80,7 @@
         <!-- Begin blog columns area-->
         <section id="blog-columns" class="column-layout">
             <div class="col2 grey-text">
-                <img src="img/2-1.jpg" alt="">
+                <img src="img/2-1.jpg" alt="#" class="content-img">
                 <h2>article about chingu.IO</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus
                     sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in
@@ -87,7 +92,7 @@
                 </div>
             </div>
             <div class="col2 grey-text">
-                <img src="img/2-2.jpg" alt="">
+                <img src="img/2-2.jpg" alt="#" class="content-img">
                 <h2>article about pomodoro</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus
                     sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in
@@ -104,9 +109,10 @@
 
     <!-- Begin sevices area-->
     <div id="scroll-anchor-services"></div>
-    <section class="services parallax">
-        <h2>services</h2>
-        <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In
+    <section class="services parallax2">
+        <h2 class="whiteText">services</h2>
+        <p class="whiteText">Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis
+            ligula. In
             euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
     </section>
     <!-- End services area-->
@@ -147,43 +153,64 @@
                     <a class="grey-button button" href="#">Grey button</a>
                 </div>
             </div>
-            <div class="col grey-text">
-                <img src="img/4-5.jpg" alt="">
-                <h2>one big column</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut cursus
-                    sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed in
-                    leo sit amet velit finibus pretium. Vivamus dictum nisi ac fermentum interdum. Vestibulum vel mauris
-                    at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl lectus,
-                    auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus. Praesent
-                    volutpat cursus rhoncus. Aenean arcu diam, suscipit ac neque in, sollicitudin convallis orci.</p>
-                <p>
-                    Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis parturient
-                    montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia. Morbi
-                    sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper
-                    auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna,
-                    ornare ac scelerisque quis, maximus eget nisi.</p>
-                <a class="grey-button button" href="#">Grey button</a>
-
+            <div class="column-layout">
+                <div class="col grey-text">
+                    <img src="img/4-5.jpg" alt="" class="content-img">
+                    <h2>one big column</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tempor eros eget eros maximus, ut
+                        cursus
+                        sem euismod. Donec iaculis tristique odio at consectetur. Nullam dignissim varius suscipit. Sed
+                        in
+                        leo sit amet velit finibus pretium. Vivamus dictum nisi ac fermentum interdum. Vestibulum vel
+                        mauris
+                        at erat mattis accumsan et ac lorem. Cras non venenatis orci, sed tincidunt massa. Duis nisl
+                        lectus,
+                        auctor eu sodales at, dignissim eu orci. Sed vitae venenatis magna, in blandit metus. Praesent
+                        volutpat cursus rhoncus. Aenean arcu diam, suscipit ac neque in, sollicitudin convallis orci.
+                    </p>
+                    <p>
+                        Fusce eu porta massa, sed tincidunt turpis. Cum sociis natoque penatibus et magnis dis
+                        parturient
+                        montes, nascetur ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae nisi et lacinia.
+                        Morbi
+                        sagittis justo a velit placerat ullamcorper quis quis velit. Sed convallis at risus ullamcorper
+                        auctor. Praesent quis velit neque. Quisque semper porta nisi vitae suscipit. Duis lectus magna,
+                        ornare ac scelerisque quis, maximus eget nisi.</p>
+                    <a class="grey-button button" href="#">Grey button</a>
+                </div>
             </div>
         </section>
         <!-- End others area-->
     </div>
     <!-- Begin contact area-->
     <div id="scroll-anchor-contact"></div>
-    <section class="contact parallax">
-        <h2>Contact Form</h2>
-        <p>Nunc diam leo, fringilla vulputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In
-            euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.</p>
-        <form action="">
-            <label for="">Name</label>
-            <input type="text">
-            <label for="">Email</label>
-            <input type="text">
-            <label for="">Subject</label>
-            <input type="text">
-            <label for="">Your message</label>
-            <input type="text">
-        </form>
+    <section class="contact parallax3">
+        <div class="container-contact">
+            <h2 class="whiteText">Contact Form</h2>
+            <p class="whiteText contact-col info">Nunc diam leo, fringilla vulputate elit lobortis, consectetur
+                vestibulum
+                quam.
+                Sed
+                id felis
+                ligula. In
+                euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mi quis arcu varius condimentum.
+            </p>
+
+            <form action="">
+                <div class="column-layout">
+                    <div class="contact-col half">
+                        <input class="mgbtm" type="text" placeholder="Name">
+                        <input class="mgbtm" placeholder="Email">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="contact-col half">
+                        <textarea placeholder="Your message"></textarea>
+                        <button class="button green-button">Send</button>
+                    </div>
+                </div>
+            </form>
+
+
     </section>
     <!-- End contact area-->
 
@@ -191,11 +218,12 @@
     <!-- Begin footer area-->
     <section class="footer">
         <div>
-            <H3>Github: SebFine | Discord: @SebFine#5354</H3>
+            <H4>Use it, contribute.</H4>
             <p>Conquer clon is a clon from a website template.</p>
         </div>
+        <hr>
         <div>
-            <p>Copyright © 2020 Your Company Name | Design: templatemo | Clone: Sebastian Finé</p>
+            <p>Copyright © 2020 | Design: templatemo | Github: SebFine | Discord: @SebFine#5354</p>
         </div>
     </section>
     <!-- End footer area-->
