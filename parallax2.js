@@ -13,7 +13,6 @@ window.addEventListener("scroll", () => {
   const parallax = document.querySelectorAll(".parallax2");
   for (const i of parallax) {
     let coords = '0% ' + (-((scrolled - scrolled * 0.95) * 2) + 'px');
-    console.log(scrolled);
     i.style.backgroundPosition = coords;
   }
 });
